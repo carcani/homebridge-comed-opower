@@ -1,0 +1,14 @@
+{
+  "accessories": [
+    {
+      "accessory": "ComEd Energy",
+      "name": "ComEd Energy",
+      "username": "YOUR_COMED_USERNAME",
+      "password": "YOUR_COMED_PASSWORD",
+      "pollInterval": 30,
+      "python": "/opt/homebridge-comed-opower-venv/bin/python",
+      "loginFile": "/var/lib/homebridge/comed-login.json",
+      "days": 2
+    }
+  ]
+}

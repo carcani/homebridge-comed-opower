@@ -1,0 +1,51 @@
+{
+  "name": "homebridge-comed-opower",
+  "version": "1.0.0",
+  "description": "Homebridge plugin for retrieving ComEd electricity usage through Opower.",
+  "main": "index.js",
+  "author": {
+    "name": "carcani",
+    "url": "https://github.com/carcani"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "homebridge": ">=2.0.0"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "comed",
+    "commonwealth-edison",
+    "opower",
+    "energy",
+    "electricity",
+    "homekit"
+  ],
+  "peerDependencies": {
+    "homebridge": ">=2.0.0"
+  },
+  "files": [
+    "index.js",
+    "opower_helper.py",
+    "config.schema.json",
+    "config.example.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carcani/homebridge-comed-opower.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carcani/homebridge-comed-opower/issues"
+  },
+  "homepage": "https://github.com/carcani/homebridge-comed-opower",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/carcani"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "pluginAlias": "ComEd Energy",
+  "pluginPackage": "homebridge-comed-opower",
+  "pluginType": "accessory",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "ComEd Energy",
+        "description": "Name of the ComEd energy accessory."
+      },
+      "username": {
+        "title": "ComEd Username",
+        "type": "string",
+        "description": "Your ComEd account username/email address."
+      },
+      "password": {
+        "title": "ComEd Password",
+        "type": "string",
+        "formType": "password",
+        "description": "Your ComEd account password."
+      },
+      "pollInterval": {
+        "title": "Poll Interval (minutes)",
+        "type": "integer",
+        "default": 30,
+        "minimum": 5,
+        "maximum": 1440,
+        "description": "How often to retrieve updated ComEd usage data."
+      },
+      "python": {
+        "title": "Python Executable",
+        "type": "string",
+        "default": "/opt/homebridge-comed-opower-venv/bin/python",
+        "description": "Path to the Python executable containing the opower package."
+      },
+      "loginFile": {
+        "title": "Login Data File",
+        "type": "string",
+        "default": "/var/lib/homebridge/comed-login.json",
+        "description": "Location used to store the saved ComEd/Opower MFA login data."
+      },
+      "days": {
+        "title": "Historical Data (days)",
+        "type": "integer",
+        "default": 2,
+        "minimum": 1,
+        "maximum": 31,
+        "description": "Number of days of historical ComEd usage to retrieve."
+      }
+    },
+    "required": [
+      "name",
+      "username",
+      "password"
+    ]
+  }
+}
